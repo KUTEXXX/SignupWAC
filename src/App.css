@@ -1,0 +1,194 @@
+.App {
+  text-align: center;
+  background-color: aqua;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  
+}
+
+.logo {
+  width: 300px; /* Ancho de la imagen */
+  height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+  /* Espacio por debajo de la imagen */
+  /* Otros estilos... */
+  /*animation: App-logo-spin infinite 10s linear;*/
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2em; /* Cambia el tamaño del texto según sea necesario */
+  -webkit-text-stroke: 2px black; /* Aplica un borde negro de 1px alrededor del texto */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Añade una sombra al texto para resaltar el borde */
+}
+
+.styleFont{
+  font-weight: bold;
+  font-size: 1em; /* Cambia el tamaño del texto según sea necesario */
+  -webkit-text-stroke: 1px rgb(2, 35, 12); /* Aplica un borde negro de 1px alrededor del texto */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Añade una sombra al texto para resaltar el borde */
+}
+
+/*Estilos de error */
+.error-container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100vh; /* Altura del viewport */
+}
+
+.error-message {
+  color: rgb(255, 255, 255); /* Color del texto en rojo */
+  font-size: 25px; /* Tamaño de fuente */
+  margin-top: 5px; /* Margen superior */
+  background-color: rgba(220, 21, 21, 0.52); /* Color de fondo semi-transparente */
+  max-width:max-content ;
+  border-radius: 15px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+/*Estilos de error */
+
+/*Estilo imagen ojo Contraseña Visible */
+.password-toggle-icon {
+  background: none; /* Eliminar fondo del botón */
+  border: none; /* Eliminar borde del botón */
+  width: 30px; /* Establecer el ancho deseado de la imagen */
+  height: 30px; /* Mantener la proporción de la imagen */
+  z-index: 10;
+  right: 32px;
+  position: relative;
+  /* Agregar cualquier otro estilo deseado */
+}
+
+.d-flex{
+  display: flex;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.password-input {
+  width: 250px; /* Ancho fijo para el input de contraseña */
+  /* Otros estilos para el input */
+}
+
+.password-toggle-icon {
+  margin-left: 10px; /* Espacio entre el input y el botón del ojo */
+  /* Estilos adicionales para el botón del ojo */
+}
+
+
+/*Estilo imagen ojo Contraseña Visible */
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #5bc0a6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.form-group{
+  margin-bottom: 30px;
+}
+
+/*Estilo de Fecha de Nacimineto*/
+.birthdate-container {
+  margin-top: 50px; /* Espacio entre el label y el input */
+}
+
+
+.birthdate-input {
+  width: 300px; /* Ancho del recuadro */
+  height: 40px; /* Alto del recuadro */
+  font-size: 28px; /* Tamaño de la letra dentro del recuadro */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 10px; /* Espacio entre el label y el input */
+  margin-left: 20px;
+  /* Otros estilos que desees */
+}
+
+/*Estilo de Fecha de Nacimineto*/
+
+
+.form { /* Estilo para el borde del form */
+  border: 5px solid rgb(255, 255, 255); /* Crea un borde sólido de 2 píxeles de grosor y color negro */
+  padding: 10px; /* Añade espacio interior alrededor del contenido */
+  width: max-content; /* Establece un ancho para el div */
+  height: auto; /* Establece una altura para el div */
+  flex-direction: column;
+  align-content: center;
+  border-radius: 10px; /* Establece el radio de las esquinas a 10 píxeles para hacerlas circulares */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.108); /* Agregar una sombra suave */
+  margin: 0 auto;
+}
+
+.input input {
+  height: 30px;
+  width: 80%;
+  font-size: medium;
+  border: 1px solid #ffffff; /* Agregar un borde gris claro */
+  border-radius: 16px; /* Agregar esquinas redondeadas */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); /* Agregar una sombra suave */
+  background-color: rgb(255, 255, 255); /* Fondo con transparencia */
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilo del boton*/
+#submitButton img {
+  width: 200px; /* Establece el ancho de la imagen */
+  height: 200px; /* Establece la altura de la imagen */
+}
+
+#submitButton {
+  
+  border: none; /* Elimina el borde del botón */
+  background: none; /* Elimina el fondo del botón */
+  
+}
+
+#submitButton:hover {
+  
+  cursor: url('cursor.png'), auto; /* Cambia la imagen del cursor al pasar sobre el botón */
+}
+
+#submitButton img:hover {
+  width: 220px; /* Establece el ancho de la imagen */
+  height: 220px; /* Establece la altura de la imagen */
+  transition: 1s
+}
+/* Estilo del boton*/
